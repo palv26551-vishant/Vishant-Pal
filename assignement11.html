@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Webpage</title>
+</head>
+
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content">Skip to Main Content</a>
+
+    <!-- Main Heading -->
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <!-- Navigation with ARIA Label -->
+    <nav aria-label="Main Navigation">
+          <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <h2 id="home">Home</h2>
+        <p>Welcome to my accessible webpage.</p>
+
+        <!-- Image with Alt Text -->
+        <h2>Image Section</h2>
+        <img src="image.jpg"
+             alt="A beautiful nature landscape"
+             width="300">
+
+        <!-- ARIA Label -->
+        <h2 id="about">About Us</h2>
+         <button aria-label="Read more about our website">
+            Read More
+        </button>
+
+        <h2 id="contact">Contact Us</h2>
+        <p>Email: example@gmail.com</p>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026 My Website</p>
+    </footer>
+
+</body>
+</html>
